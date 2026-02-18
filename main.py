@@ -15,6 +15,7 @@ def main():
 
     #Test successful transfer
     checking_account1.transfer_money(60)
+    print(checking_account1.current_balance)
     #Works correctly
 
     checking_account2 = CheckingAccount("Jane Doe", 800, 300, 150, 888, 456)
@@ -23,6 +24,13 @@ def main():
     checking_account2.withdraw(100)
     print(checking_account2.current_balance)
     #Works Correctly
+
+    #Test transfer after withdrawing
+    checking_account2.transfer_money(100)
+    print(checking_account2.current_balance)
+    #Works correctly
+
+
 
 
 
