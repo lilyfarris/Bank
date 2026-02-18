@@ -5,4 +5,5 @@ class SavingsAccount(BankAccount):
         self.interest = interest
 
 
-
+    def interest_earned(self):
+        self.current_balance += self.current_balance * self.interest
