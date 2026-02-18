@@ -37,6 +37,13 @@ def main():
     print(savings_account1.current_balance)
     #Works correctly
 
+    savings_account2 = SavingsAccount("Joe Doe", 2000, 500, 0.03, 333, 222)
+
+    #Test interest earned after depositing
+    savings_account2.deposit(500)
+    savings_account2.interest_earned()
+    print(savings_account2.current_balance)
+    #Works correctly
 
 
 
