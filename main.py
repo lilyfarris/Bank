@@ -30,6 +30,12 @@ def main():
     print(checking_account2.current_balance)
     #Works correctly
 
+    savings_account1 = SavingsAccount("John Doe", 1000, 400, 0.05, 777, 999)
+
+    #Test interest earned
+    savings_account1.interest_earned()
+    print(savings_account1.current_balance)
+    #Works correctly
 
 
 
